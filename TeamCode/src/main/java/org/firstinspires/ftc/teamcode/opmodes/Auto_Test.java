@@ -113,7 +113,7 @@ public class Auto_Test extends LinearOpMode {
     public void sRight() { leftFront.setPower(strafeRightPower); rightFront.setPower(-strafeRightPower); leftRear.setPower(strafeRightPower); rightRear.setPower(-strafeRightPower);}
 
 
-    //  STRAFE LEFT  //
+    //  STRAFE LEFT
     double strafeLeftPower = 0.65;
     public void sLeft() { leftFront.setPower(-strafeLeftPower); rightFront.setPower(strafeLeftPower); leftRear.setPower(-strafeLeftPower); rightRear.setPower(strafeLeftPower);}
 }
