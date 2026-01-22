@@ -69,7 +69,7 @@ public class red_back_auto extends LinearOpMode {
     public void halt() { leftFront.setPower(0); rightFront.setPower(0); leftRear.setPower(0); rightRear.setPower(0); }
 
 
-    // FORWARD //
+    // FORWARD
     double forwardPower = 0.65;
     int forwardDelay = 235;
     public void forward() { leftRear.setPower(forwardPower); rightRear.setPower(forwardPower); sleep(forwardDelay); leftFront.setPower(forwardPower); rightFront.setPower(forwardPower); }
