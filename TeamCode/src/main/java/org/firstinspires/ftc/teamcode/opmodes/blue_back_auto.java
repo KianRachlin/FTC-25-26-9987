@@ -1,12 +1,12 @@
 package org.firstinspires.ftc.teamcode.opmodes;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+
 // Name changes for all ()
-@Autonomous(name = "RedBackAuto")
-public class red_back_auto extends LinearOpMode {
+@Autonomous(name = "BlueBackAuto")
+public class blue_back_auto extends LinearOpMode {
 
     // Motors & Servo
 
@@ -36,9 +36,9 @@ public class red_back_auto extends LinearOpMode {
             backward();
             sleep(100);
             // Shooter.power(0.55);
-            left();
+            right();
             sleep(50);
-            sLeft();
+            sRight();
             sleep(250);
             halt();
 
