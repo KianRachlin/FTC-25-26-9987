@@ -5,10 +5,10 @@ import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 // Name changes for all ()
-@Autonomous(name = "Auto_Test")
-public class Auto_Test extends LinearOpMode {
+@Autonomous(name = "RedBackAuto")
+public class red_back_auto extends LinearOpMode {
 
-    // Initilizing Motors & Servo
+    // Motors & Servo
 
     // Motors
     private DcMotor rightFront;
@@ -33,29 +33,20 @@ public class Auto_Test extends LinearOpMode {
             rightFront.setDirection(DcMotor.Direction.REVERSE);
             rightRear.setDirection(DcMotor.Direction.REVERSE);
 
-            forward();
-            sleep(400);
-            left();
-            sleep(200);
-            forward();
-            sleep(100);
             backward();
-            sleep(75);
+            sleep(100);
+            // Shooter.power(0.55);
             left();
-            sleep(100);
-            forward();
-            sleep(150);
-            right();
-            sleep(100);
-            forward();
             sleep(50);
-            halt();
+            sLeft();
+            sleep(250);
+
 
         }
     }
-  
-  
-  
+
+
+
   /*
   MOVEMENT:
   - STOP: halt()
@@ -113,3 +104,4 @@ public class Auto_Test extends LinearOpMode {
     double strafeLeftPower = 0.65;
     public void sLeft() { leftFront.setPower(-strafeLeftPower); rightFront.setPower(strafeLeftPower); leftRear.setPower(-strafeLeftPower); rightRear.setPower(strafeLeftPower);}
 }
+
