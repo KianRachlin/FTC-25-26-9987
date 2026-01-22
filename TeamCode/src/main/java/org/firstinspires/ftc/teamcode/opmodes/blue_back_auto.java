@@ -26,6 +26,7 @@ public class blue_back_auto extends LinearOpMode {
         rightRear = hardwareMap.get(DcMotor.class, "rightRear");
         leftFront = hardwareMap.get(DcMotor.class, "leftFront");
         leftRear = hardwareMap.get(DcMotor.class, "leftRear");
+        // shooter = hardwareMap.get(DcMotor.class, "shooter");
 
         waitForStart();
         if (opModeIsActive()) {

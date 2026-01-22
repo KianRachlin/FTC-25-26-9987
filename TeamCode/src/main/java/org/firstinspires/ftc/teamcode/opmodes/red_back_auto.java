@@ -42,7 +42,6 @@ public class red_back_auto extends LinearOpMode {
             sleep(250);
             halt();
 
-
         }
     }
 
