@@ -1,10 +1,9 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.opmodes;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
-
 // Name changes for all ()
 @Autonomous(name = "Auto_Test")
 public class Auto_Test extends LinearOpMode {
@@ -117,13 +116,4 @@ public class Auto_Test extends LinearOpMode {
     //  STRAFE LEFT  //
     double strafeLeftPower = 0.65;
     public void sLeft() { leftFront.setPower(-strafeLeftPower); rightFront.setPower(strafeLeftPower); leftRear.setPower(-strafeLeftPower); rightRear.setPower(strafeLeftPower);}
-
-
-    //  OTHER METHODS  //
-
-    //  SERVO RELEASE  //
-    double servoReleasePos = 0.65;
-    int servoLockPos = 1;
-    int servoReleaseTime = 1500;
-    int servoLockTime = 170;
 }
