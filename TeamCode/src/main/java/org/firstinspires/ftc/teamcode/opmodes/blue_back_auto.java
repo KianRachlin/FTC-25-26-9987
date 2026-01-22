@@ -15,6 +15,7 @@ public class blue_back_auto extends LinearOpMode {
     private DcMotor rightRear;
     private DcMotor leftFront;
     private DcMotor leftRear;
+    private DcMotor shooter;
 
 
     @Override
@@ -35,11 +36,13 @@ public class blue_back_auto extends LinearOpMode {
 
             backward();
             sleep(100);
-            // Shooter.power(0.55);
+            // shooter.power(0.55);
             right();
             sleep(50);
             sRight();
             sleep(250);
+            forward();
+            sleep(25);
             halt();
 
 
